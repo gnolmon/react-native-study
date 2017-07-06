@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Text, View } from 'react-native';
-import ScrollViewExample from './ScrollViewExample'
+import ImageExample from './ImageExample'
 
 class Home extends Component {
     // constructor(){
@@ -23,7 +23,7 @@ class Home extends Component {
             // <View>
             //     <PresentationalComponent myState = {this.state.myState} updateState = {this.updateState} />
             // </View>
-            <ScrollViewExample />
+            <ImageExample />
         );
     }
 }
