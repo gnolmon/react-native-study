@@ -1,31 +1,32 @@
 import React, {Component} from 'react';
-import { Text, View } from 'react-native';
-import HttpExample from './HttpExample'
+import { TouchableHighlight, TouchableNativeFeedback, TouchableOpacity, StyleSheet, Text, View , Button} from 'react-native';
 
-class Home extends Component {
-    // constructor(){
-    //     super()
-    //     this.updateState = this.updateState.bind(this)
-    // }
+const Home = () => {
+    handlePress = () => false
 
-    // state = { 
-    //     myState: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    // }
+    return (
+        <View style = {styles.container}>
+         <TouchableNativeFeedback>
+            <Text style = {styles.text}>
+               Button
+            </Text>
+         </TouchableNativeFeedback>
+        </View>
+    );
 
-    // updateState(){
-    //     this.setState({
-    //         myState: 'The state is updated'
-    //     });
-    // }
-
-    render() {
-        return (
-            // <View>
-            //     <PresentationalComponent myState = {this.state.myState} updateState = {this.updateState} />
-            // </View>
-            <HttpExample />
-        );
-    }
 }
 
 export default Home
+
+const styles = StyleSheet.create ({
+   container: {
+      alignItems: 'center',
+   },
+	
+   text: {
+      borderWidth: 1,
+      padding: 25,
+      borderColor: 'black',
+      backgroundColor: 'red'
+   }
+})
